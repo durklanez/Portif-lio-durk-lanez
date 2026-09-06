@@ -3,137 +3,425 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfólio Durk Lanez</title>
+
+<title>Durk Lanez | Portfólio</title>
 
 <style>
 
-body{
-font-family:Arial;
-margin:0;
-background:#0f172a;
-color:white;
+*{
+    box-sizing:border-box;
 }
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    padding:50px 0;
+}
+
+/* CABEÇALHO */
 
 header{
-background:#020617;
-padding:30px;
-text-align:center;
+    text-align:center;
+    margin-bottom:45px;
 }
+
+.badge{
+    display:inline-block;
+    color:#38bdf8;
+    font-size:14px;
+    letter-spacing:4px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:42px;
+    margin:5px 0 12px;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* SEÇÕES */
 
 section{
-padding:25px;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-margin:15px;
-border-radius:10px;
+    margin-bottom:35px;
 }
 
 h2{
-color:#38bdf8;
+    font-size:25px;
+    color:#38bdf8;
+    margin-bottom:18px;
+    border-left:4px solid #38bdf8;
+    padding-left:12px;
 }
 
-a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:bold;
+p{
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* HABILIDADES */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:rgba(56,189,248,0.10);
+    border:1px solid rgba(56,189,248,0.25);
+    color:#e0f2fe;
+    padding:9px 14px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* PROJETO */
+
+.project{
+    background:rgba(15,23,42,0.65);
+    border:1px solid rgba(148,163,184,0.18);
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.project h3{
+    margin-top:0;
+    font-size:24px;
+    color:white;
+}
+
+.project p{
+    margin-bottom:20px;
+}
+
+/* BOTÕES */
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.button{
+    display:inline-block;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    background:#38bdf8;
+    color:#020617;
+    transition:0.2s;
+}
+
+.button:hover{
+    background:#0ea5e9;
+    transform:translateY(-2px);
+}
+
+.button.secondary{
+    background:transparent;
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.button.secondary:hover{
+    background:#38bdf8;
+    color:#020617;
+}
+
+/* CONTACTO */
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+/* RODAPÉ */
+
+footer{
+    text-align:center;
+    border-top:1px solid rgba(148,163,184,0.15);
+    padding-top:25px;
+    margin-top:50px;
+    color:#64748b;
+    font-size:14px;
+}
+
+/* TELEMÓVEL */
+
+@media(max-width:600px){
+
+    .container{
+        padding:35px 0;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .project{
+        padding:20px;
+    }
+
+    .button{
+        width:100%;
+        text-align:center;
+    }
+
 }
 
 </style>
-
 </head>
 
 <body>
 
-<header>
-<h1>Durk Lanez</h1>
-<p>Desenvolvedor Python | Desenvolvedor Web | Automação</p>
-</header>
+<div class="container">
 
-<section class="card">
+    <!-- CABEÇALHO -->
 
-<h2>Sobre</h2>
+    <header>
 
-<p>
-Sou um desenvolvedor autodidata de Angola focado em Python,
-automação e desenvolvimento web. Crio bots, sites e
-plataformas digitais como marketplaces e sistemas online.
-</p>
+        <div class="badge">PORTFÓLIO</div>
 
-</section>
+        <h1>Durk Lanez</h1>
 
-<section class="card">
+        <div class="subtitle">
+            Desenvolvedor Python | Desenvolvedor Web | Automação
+        </div>
 
-<h2>Habilidades</h2>
+    </header>
 
-<ul>
-<li>Python</li>
-<li>HTML / CSS / JavaScript</li>
-<li>Flask</li>
-<li>Firebase</li>
-</ul>
 
-</section>
+    <!-- SOBRE MIM -->
 
-<section class="card">
+    <section>
 
-<h2>Projetos Online</h2>
+        <h2>Sobre Mim</h2>
 
-<h3>Cafunfo Online</h3>
+        <p>
+            Sou um desenvolvedor de software autodidata de Angola,
+            com foco em Python, arquitetura backend, desenvolvimento
+            web e automação.
+        </p>
 
-<a href="https://durklanez.github.io/Cafunfo-holine-/">
-Abrir Aplicativo
-</a>
+        <p>
+            Tenho experiência no desenvolvimento de APIs REST,
+            integração com Firebase e Firestore, implementação de
+            soluções de Inteligência Artificial através de APIs de LLM
+            e desenvolvimento de bots para Telegram.
+        </p>
 
-<br><br>
+        <p>
+            Também possuo experiência com implantação de aplicações
+            em nuvem, Git, GitHub, Linux e desenvolvimento mobile
+            utilizando Flutter e Dart.
+        </p>
 
-<h3>Portfólio</h3>
+    </section>
 
-<a href="https://durklanez.github.io/Portif-lio-durk-lanez/">
-Abrir Projeto
-</a>
 
-</section>
+    <!-- HABILIDADES -->
 
-<section class="card">
+    <section>
 
-<h2>Código dos Projetos</h2>
+        <h2>Habilidades Técnicas</h2>
 
-<h3>Código Cafunfo Online</h3>
+        <div class="skills">
 
-<a href="https://github.com/durklane/Cafunfo-holine-">
-Ver Código
-</a>
+            <span class="skill">Python</span>
+            <span class="skill">Dart</span>
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS3</span>
+            <span class="skill">JavaScript</span>
 
-<br><br>
+            <span class="skill">Flask</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">Arquitetura MVC</span>
 
-<h3>Código Bot Telegram</h3>
+            <span class="skill">Flutter</span>
+            <span class="skill">UI/UX Mobile</span>
 
-<a href="https://github.com/durklane/telegram-firebase-bot">
-Ver Código
-</a>
+            <span class="skill">Firebase</span>
+            <span class="skill">Firestore</span>
+            <span class="skill">Firebase Authentication</span>
+            <span class="skill">Realtime Database</span>
 
-</section>
+            <span class="skill">Render</span>
+            <span class="skill">GitHub Actions</span>
 
-<section class="card">
+            <span class="skill">Groq API</span>
+            <span class="skill">Telegram Bot API</span>
+            <span class="skill">Webhooks</span>
 
-<h2>Contato</h2>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Automação de Processos</span>
+            <span class="skill">Segurança da Informação</span>
 
-<a href="mailto:durkjosue@gmail.com">Email</a>
+        </div>
 
-<br><br>
+    </section>
 
-<a href="https://github.com/durklane">GitHub</a>
 
-<br><br>
+    <!-- PROJETO -->
 
-<a href="https://www.linkedin.com/in/durk-lanez-292806355">
-LinkedIn
-</a>
+    <section>
 
-</section>
+        <h2>Projeto em Destaque</h2>
+
+        <div class="project">
+
+            <h3>Inteligência App</h3>
+
+            <p>
+                O Inteligência App é um projeto de software desenvolvido
+                com Python e Flask, criado para integrar recursos de
+                Inteligência Artificial em uma aplicação web através
+                da Groq API.
+            </p>
+
+            <p>
+                O projeto utiliza Firebase e Firestore para autenticação
+                de usuários, gerenciamento de dados e sessões.
+                O backend é responsável pela comunicação entre a
+                aplicação e diferentes serviços através de APIs.
+            </p>
+
+            <p>
+                A aplicação está hospedada na nuvem utilizando Render,
+                reunindo conhecimentos práticos de desenvolvimento
+                backend, APIs REST, bancos de dados, Inteligência
+                Artificial, autenticação e implantação em nuvem.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="button"
+                    href="https://inteligencia-app-41ah.onrender.com/"
+                    target="_blank"
+                >
+                    Abrir Aplicativo
+                </a>
+
+                <a
+                    class="button secondary"
+                    href="https://github.com/durklanez/inteligencia.cafunfo"
+                    target="_blank"
+                >
+                    Código-fonte
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FORMAÇÃO -->
+
+    <section>
+
+        <h2>Formação Académica</h2>
+
+        <p>
+            <strong>Graduação em Tecnologia e Desenvolvimento de Software</strong><br>
+            Universidad Siglo 21 — Em andamento
+        </p>
+
+    </section>
+
+
+    <!-- IDIOMAS -->
+
+    <section>
+
+        <h2>Idiomas</h2>
+
+        <p>
+            <strong>Português:</strong> Nativo
+        </p>
+
+        <p>
+            <strong>Inglês:</strong> Técnico — excelente capacidade
+            de leitura de documentação e artigos técnicos e de escrita
+            de código; conversação em desenvolvimento.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+
+    <section class="contact">
+
+        <h2>Contacto</h2>
+
+        <p>
+            <strong>E-mail:</strong>
+            <a href="mailto:durkjosue@gmail.com">
+                durkjosue@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a
+                href="https://github.com/durklanez"
+                target="_blank"
+            >
+                github.com/durklanez
+            </a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a
+                href="https://linkedin.com/in/durk-lanez-292806355"
+                target="_blank"
+            >
+                linkedin.com/in/durk-lanez-292806355
+            </a>
+        </p>
+
+    </section>
+
+
+    <footer>
+        © 2026 Durk Lanez — Portfólio
+    </footer>
+
+</div>
 
 </body>
 </html>
