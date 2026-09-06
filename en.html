@@ -1,138 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Durk Lanez Portfolio</title>
+
+<title>Durk Lanez | Python Developer</title>
 
 <style>
 
 body{
-font-family:Arial;
 margin:0;
-background:#0f172a;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#0f172a,#1e293b);
 color:white;
+padding:40px 20px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
 }
 
 header{
-background:#020617;
-padding:30px;
 text-align:center;
+margin-bottom:45px;
+}
+
+h1{
+font-size:40px;
+margin:10px 0;
+}
+
+.subtitle{
+font-size:19px;
+color:#38bdf8;
 }
 
 section{
-padding:25px;
-}
-
-.card{
-background:#1e293b;
-padding:20px;
-margin:15px;
-border-radius:10px;
+margin-bottom:35px;
 }
 
 h2{
 color:#38bdf8;
+font-size:24px;
+margin-bottom:15px;
 }
 
-a{
-color:#38bdf8;
+p{
+color:#cbd5e1;
+font-size:16px;
+line-height:1.7;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:#1e293b;
+border:1px solid #334155;
+padding:10px 15px;
+border-radius:8px;
+color:#e2e8f0;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:14px;
+border:1px solid #334155;
+}
+
+.project h3{
+font-size:22px;
+margin-top:0;
+color:white;
+}
+
+.project p{
+margin-bottom:20px;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.button{
+display:inline-block;
+padding:12px 18px;
+background:#38bdf8;
+color:#000;
 text-decoration:none;
+border-radius:8px;
 font-weight:bold;
 }
 
-</style>
+.button:hover{
+background:#0ea5e9;
+}
 
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+margin-top:50px;
+color:#64748b;
+font-size:14px;
+}
+
+</style>
 </head>
 
 <body>
 
+<div class="container">
+
 <header>
+
 <h1>Durk Lanez</h1>
-<p>Python Developer | Web Developer | Automation</p>
+
+<div class="subtitle">
+Python Developer | Web Developer | Automation
+</div>
+
 </header>
 
-<section class="card">
 
-<h2>About</h2>
+<section>
+
+<h2>About Me</h2>
 
 <p>
-I am a self-taught developer from Angola focused on Python,
-automation and web development.
+I am a self-taught Software Developer from Angola focused on Python,
+backend architecture, web development and automation. I have experience
+building REST APIs, integrating Firebase and Firestore databases,
+working with Artificial Intelligence APIs and developing Telegram bots.
+</p>
+
+<p>
+I also have experience with cloud deployment, Git, GitHub, Linux and
+mobile development using Flutter and Dart.
 </p>
 
 </section>
 
-<section class="card">
 
-<h2>Skills</h2>
+<section>
 
-<ul>
-<li>Python</li>
-<li>HTML / CSS / JavaScript</li>
-<li>Flask</li>
-<li>Firebase</li>
-</ul>
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Dart</div>
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Flutter</div>
+<div class="skill">Flask</div>
+<div class="skill">REST APIs</div>
+<div class="skill">Firebase</div>
+<div class="skill">Firestore</div>
+<div class="skill">Groq API</div>
+<div class="skill">Telegram Bot API</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">Linux</div>
+<div class="skill">Render</div>
+<div class="skill">GitHub Actions</div>
+</div>
 
 </section>
 
-<section class="card">
 
-<h2>Online Projects</h2>
+<section>
 
-<h3>Cafunfo Online</h3>
+<h2>Featured Project</h2>
 
-<a href="https://durklanez.github.io/Cafunfo-holine-/">
+<div class="project">
+
+<h3>Inteligência App</h3>
+
+<p>
+Inteligência App is a software project developed with a Python and Flask
+backend, focused on integrating Artificial Intelligence into a web
+application through the Groq API.
+</p>
+
+<p>
+The project uses Firebase and Firestore for user authentication and
+session management, while the backend provides API-based communication
+between the application and its services.
+</p>
+
+<p>
+The application is deployed in the cloud using Render, demonstrating
+practical experience with backend development, APIs, databases,
+Artificial Intelligence integration and cloud deployment.
+</p>
+
+<div class="buttons">
+
+<a class="button"
+href="https://inteligencia-app-41ah.onrender.com/"
+target="_blank">
 Open App
 </a>
 
-<br><br>
-
-<h3>Portfolio</h3>
-
-<a href="https://durklanez.github.io/Portif-lio-durk-lanez/">
-Open App
+<a class="button"
+href="https://github.com/durklanez/inteligencia.cafunfo"
+target="_blank">
+Source Code
 </a>
+
+</div>
+
+</div>
 
 </section>
 
-<section class="card">
 
-<h2>Source Code</h2>
+<section>
 
-<h3>Cafunfo Online Code</h3>
+<h2>Education</h2>
 
-<a href="https://github.com/durklane/Cafunfo-holine-">
-View Code
-</a>
-
-<br><br>
-
-<h3>Telegram Bot Code</h3>
-
-<a href="https://github.com/durklane/telegram-firebase-bot">
-View Code
-</a>
+<p>
+<strong>Degree in Software Technology and Development</strong><br>
+Universidad Siglo 21 — In progress
+</p>
 
 </section>
 
-<section class="card">
+
+<section>
+
+<h2>Languages</h2>
+
+<p>
+<strong>Portuguese:</strong> Native
+</p>
+
+<p>
+<strong>English:</strong> Technical — excellent reading of technical
+documentation and articles, and code writing; conversational skills in
+development.
+</p>
+
+</section>
+
+
+<section class="contact">
 
 <h2>Contact</h2>
 
-<a href="mailto:durkjosue@gmail.com">Email</a>
-
-<br><br>
-
-<a href="https://github.com/durklane">GitHub</a>
-
-<br><br>
-
-<a href="https://www.linkedin.com/in/durk-lanez-292806355">
-LinkedIn
+<p>
+Email:
+<a href="mailto:durkjosue@gmail.com">
+durkjosue@gmail.com
 </a>
+</p>
+
+<p>
+GitHub:
+<a href="https://github.com/durklanez" target="_blank">
+github.com/durklanez
+</a>
+</p>
+
+<p>
+LinkedIn:
+<a href="https://linkedin.com/in/durk-lanez-292806355" target="_blank">
+linkedin.com/in/durk-lanez-292806355
+</a>
+</p>
 
 </section>
+
+
+<footer>
+
+© 2026 Durk Lanez
+
+</footer>
+
+</div>
 
 </body>
 </html>
