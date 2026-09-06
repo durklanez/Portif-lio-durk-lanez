@@ -1,320 +1,423 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Durk Lanez | Portfólio</title>
+<title>Durk Lanez | Portfolio</title>
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:white;
-padding:40px 20px;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    min-height:100vh;
 }
 
 .container{
-max-width:900px;
-margin:auto;
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    padding:50px 0;
 }
 
+/* HEADER */
+
 header{
-text-align:center;
-margin-bottom:45px;
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.badge{
+    display:inline-block;
+    color:#38bdf8;
+    font-size:14px;
+    letter-spacing:4px;
+    font-weight:bold;
+    margin-bottom:15px;
 }
 
 h1{
-font-size:40px;
-margin:10px 0;
+    font-size:42px;
+    margin:5px 0 12px;
 }
 
 .subtitle{
-font-size:19px;
-color:#38bdf8;
+    color:#cbd5e1;
+    font-size:18px;
 }
 
+/* SECTIONS */
+
 section{
-margin-bottom:35px;
+    margin-bottom:35px;
 }
 
 h2{
-color:#38bdf8;
-font-size:24px;
-margin-bottom:15px;
-}
-
-h3{
-font-size:22px;
-margin-top:0;
-color:white;
+    font-size:25px;
+    color:#38bdf8;
+    margin-bottom:18px;
+    border-left:4px solid #38bdf8;
+    padding-left:12px;
 }
 
 p{
-color:#cbd5e1;
-font-size:16px;
-line-height:1.7;
+    color:#cbd5e1;
+    line-height:1.8;
+    font-size:16px;
 }
 
+/* SKILLS */
+
 .skills{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
 .skill{
-background:#1e293b;
-border:1px solid #334155;
-padding:10px 15px;
-border-radius:8px;
-color:#e2e8f0;
+    background:rgba(56,189,248,0.10);
+    border:1px solid rgba(56,189,248,0.25);
+    color:#e0f2fe;
+    padding:9px 14px;
+    border-radius:20px;
+    font-size:14px;
 }
+
+/* PROJECT */
 
 .project{
-background:#1e293b;
-padding:25px;
-border-radius:14px;
-border:1px solid #334155;
+    background:rgba(15,23,42,0.65);
+    border:1px solid rgba(148,163,184,0.18);
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
 }
 
+.project h3{
+    margin-top:0;
+    font-size:24px;
+    color:white;
+}
+
+.project p{
+    margin-bottom:20px;
+}
+
+/* BUTTONS */
+
 .buttons{
-display:flex;
-flex-wrap:wrap;
-gap:12px;
-margin-top:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
 }
 
 .button{
-display:inline-block;
-padding:12px 18px;
-background:#38bdf8;
-color:#000;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+    display:inline-block;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    background:#38bdf8;
+    color:#020617;
+    transition:0.2s;
 }
 
 .button:hover{
-background:#0ea5e9;
+    background:#0ea5e9;
+    transform:translateY(-2px);
 }
+
+.button.secondary{
+    background:transparent;
+    border:1px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.button.secondary:hover{
+    background:#38bdf8;
+    color:#020617;
+}
+
+/* CONTACT */
 
 .contact a{
-color:#38bdf8;
-text-decoration:none;
+    color:#38bdf8;
+    text-decoration:none;
 }
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+/* FOOTER */
 
 footer{
-text-align:center;
-margin-top:50px;
-color:#64748b;
-font-size:14px;
+    text-align:center;
+    border-top:1px solid rgba(148,163,184,0.15);
+    padding-top:25px;
+    margin-top:50px;
+    color:#64748b;
+    font-size:14px;
 }
 
-.back{
-display:block;
-text-align:center;
-margin-bottom:30px;
-}
+/* MOBILE */
 
-.back a{
-color:#38bdf8;
-text-decoration:none;
+@media(max-width:600px){
+
+    .container{
+        padding:35px 0;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .project{
+        padding:20px;
+    }
+
+    .button{
+        width:100%;
+        text-align:center;
+    }
+
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<div class="back">
-<a href="index.html">← Voltar</a>
-</div>
+    <!-- HEADER -->
 
-<header>
+    <header>
 
-<h1>Durk Lanez</h1>
+        <div class="badge">PORTFOLIO</div>
 
-<div class="subtitle">
-Desenvolvedor Python | Desenvolvedor Web | Automação
-</div>
+        <h1>Durk Lanez</h1>
 
-</header>
+        <div class="subtitle">
+            Python Developer | Web Developer | Automation
+        </div>
 
-
-<section>
-
-<h2>Sobre Mim</h2>
-
-<p>
-Sou um desenvolvedor de software autodidata de Angola, com foco em
-<strong>Python, arquitetura backend, desenvolvimento web e automação</strong>.
-</p>
-
-<p>
-Tenho experiência no desenvolvimento de <strong>APIs REST</strong>,
-integração com <strong>Firebase e Firestore</strong>, implementação de
-soluções de <strong>Inteligência Artificial através de APIs de LLM</strong>
-e desenvolvimento de <strong>bots para Telegram</strong>.
-</p>
-
-<p>
-Também possuo experiência com <strong>deploy de aplicações em nuvem</strong>,
-Git, GitHub, Linux e desenvolvimento mobile utilizando
-<strong>Flutter e Dart</strong>.
-</p>
-
-</section>
+    </header>
 
 
-<section>
+    <!-- ABOUT -->
 
-<h2>Habilidades Técnicas</h2>
+    <section>
 
-<div class="skills">
+        <h2>About Me</h2>
 
-<div class="skill">Python</div>
-<div class="skill">Dart</div>
-<div class="skill">HTML5</div>
-<div class="skill">CSS3</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Flutter</div>
-<div class="skill">Flask</div>
-<div class="skill">REST APIs</div>
-<div class="skill">Firebase</div>
-<div class="skill">Firestore</div>
-<div class="skill">Firebase Authentication</div>
-<div class="skill">Realtime Database</div>
-<div class="skill">Groq API</div>
-<div class="skill">Telegram Bot API</div>
-<div class="skill">Webhooks</div>
-<div class="skill">Git</div>
-<div class="skill">GitHub</div>
-<div class="skill">Linux</div>
-<div class="skill">Render</div>
-<div class="skill">GitHub Actions</div>
+        <p>
+            I am a self-taught software developer from Angola,
+            focused on Python, backend architecture, web development
+            and automation.
+        </p>
 
-</div>
+        <p>
+            I have experience building REST APIs, integrating Firebase
+            and Firestore, implementing Artificial Intelligence solutions
+            through LLM APIs, and developing Telegram bots.
+        </p>
 
-</section>
+        <p>
+            I also have practical experience with cloud deployment,
+            Git, GitHub, Linux, and mobile development using Flutter and Dart.
+        </p>
+
+    </section>
 
 
-<section>
+    <!-- SKILLS -->
 
-<h2>Projeto em Destaque</h2>
+    <section>
 
-<div class="project">
+        <h2>Technical Skills</h2>
 
-<h3>Inteligência App</h3>
+        <div class="skills">
 
-<p>
-<strong>Inteligência App</strong> é um projeto de software desenvolvido
-com <strong>Python e Flask</strong>, criado para integrar recursos de
-<strong>Inteligência Artificial</strong> em uma aplicação web através
-da <strong>Groq API</strong>.
-</p>
+            <span class="skill">Python</span>
+            <span class="skill">Dart</span>
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS3</span>
+            <span class="skill">JavaScript</span>
 
-<p>
-O projeto utiliza <strong>Firebase e Firestore</strong> para autenticação
-de usuários e gerenciamento de dados e sessões. O backend é responsável
-pela comunicação entre a aplicação e os diferentes serviços através de APIs.
-</p>
+            <span class="skill">Flask</span>
+            <span class="skill">REST APIs</span>
+            <span class="skill">MVC Architecture</span>
 
-<p>
-A aplicação está hospedada na nuvem utilizando <strong>Render</strong>,
-reunindo na prática conhecimentos de desenvolvimento backend, APIs REST,
-bancos de dados, Inteligência Artificial, autenticação e deploy em nuvem.
-</p>
+            <span class="skill">Flutter</span>
+            <span class="skill">Mobile UI/UX</span>
 
-<div class="buttons">
+            <span class="skill">Firebase</span>
+            <span class="skill">Firestore</span>
+            <span class="skill">Firebase Authentication</span>
+            <span class="skill">Realtime Database</span>
 
-<a class="button"
-href="https://inteligencia-app-41ah.onrender.com/"
-target="_blank">
-Abrir Aplicativo
-</a>
+            <span class="skill">Render</span>
+            <span class="skill">GitHub Actions</span>
 
-<a class="button"
-href="https://github.com/durklanez/inteligencia.cafunfo"
-target="_blank">
-Código-fonte
-</a>
+            <span class="skill">Groq API</span>
+            <span class="skill">Telegram Bot API</span>
+            <span class="skill">Webhooks</span>
 
-</div>
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Process Automation</span>
+            <span class="skill">Information Security</span>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
 
-<section>
+    <!-- PROJECT -->
 
-<h2>Formação Acadêmica</h2>
+    <section>
 
-<p>
-<strong>Graduação em Tecnologia e Desenvolvimento de Software</strong>
-<br>
-Universidad Siglo 21 — <strong>Em andamento</strong>
-</p>
+        <h2>Featured Project</h2>
 
-</section>
+        <div class="project">
 
+            <h3>Inteligência App</h3>
 
-<section>
+            <p>
+                Inteligência App is a software project developed with
+                Python and Flask, created to integrate Artificial
+                Intelligence features into a web application through
+                the Groq API.
+            </p>
 
-<h2>Idiomas</h2>
+            <p>
+                The project uses Firebase and Firestore for user
+                authentication, data management and sessions.
+                The backend handles communication between the
+                application and different services through APIs.
+            </p>
 
-<p>
-<strong>Português:</strong> Nativo
-</p>
+            <p>
+                The application is hosted in the cloud using Render,
+                bringing together practical knowledge of backend
+                development, REST APIs, databases, Artificial Intelligence,
+                authentication and cloud deployment.
+            </p>
 
-<p>
-<strong>Inglês:</strong> Técnico — excelente capacidade de leitura de
-documentação e artigos técnicos e de escrita de código; conversação
-em desenvolvimento.
-</p>
+            <div class="buttons">
 
-</section>
+                <a
+                    class="button"
+                    href="https://inteligencia-app-41ah.onrender.com/"
+                    target="_blank"
+                >
+                    Open Application
+                </a>
 
+                <a
+                    class="button secondary"
+                    href="https://github.com/durklanez/inteligencia.cafunfo"
+                    target="_blank"
+                >
+                    Source Code
+                </a>
 
-<section class="contact">
+            </div>
 
-<h2>Contato</h2>
+        </div>
 
-<p>
-<strong>E-mail:</strong>
-<a href="mailto:durkjosue@gmail.com">
-durkjosue@gmail.com
-</a>
-</p>
-
-<p>
-<strong>GitHub:</strong>
-<a href="https://github.com/durklanez" target="_blank">
-github.com/durklanez
-</a>
-</p>
-
-<p>
-<strong>LinkedIn:</strong>
-<a href="https://linkedin.com/in/durk-lanez-292806355" target="_blank">
-linkedin.com/in/durk-lanez-292806355
-</a>
-</p>
-
-</section>
+    </section>
 
 
-<footer>
+    <!-- EDUCATION -->
 
-© 2026 Durk Lanez
+    <section>
 
-</footer>
+        <h2>Education</h2>
+
+        <p>
+            <strong>Degree in Software Technology and Development</strong><br>
+            Universidad Siglo 21 — In progress
+        </p>
+
+    </section>
+
+
+    <!-- LANGUAGES -->
+
+    <section>
+
+        <h2>Languages</h2>
+
+        <p>
+            <strong>Portuguese:</strong> Native
+        </p>
+
+        <p>
+            <strong>English:</strong> Technical — excellent ability to
+            read technical documentation and articles and write code;
+            conversational skills in development.
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:durkjosue@gmail.com">
+                durkjosue@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a
+                href="https://github.com/durklanez"
+                target="_blank"
+            >
+                github.com/durklanez
+            </a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a
+                href="https://linkedin.com/in/durk-lanez-292806355"
+                target="_blank"
+            >
+                linkedin.com/in/durk-lanez-292806355
+            </a>
+        </p>
+
+    </section>
+
+
+    <footer>
+        © 2026 Durk Lanez — Portfolio
+    </footer>
 
 </div>
 
